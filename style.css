@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family==Abel&display==swap");
+*,
+::before,
+ ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #121212;
+    font-family: 'Abel', sans-serif;
+}
+
+.wrapper {
+    max-width: 300px;
+    width: 90%;
+    margin: 1rem auto;
+}
+
+.container {
+    position: relative;
+    border-radius: 5px;
+    background: #121212;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.container::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #4A00E0, #dd2476);
+    z-index: -1;
+    border-radius: inherit;
+    transform: skewX(3deg) rotate(2deg);
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    background-color: #121212;
+    padding: 20px;
+    border-radius: 5px;
+    color: #ffffff;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input {
+    display: block;
+    background: linear-gradient(to right, #4A00E0, #dd2476);
+    padding: 8px 16px;
+    border: none;
+    border-radius: 8px;
+    width: 100%;
+    margin: 0.3rem 0 1rem 0;
+}
+
+h2 {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+form {
+    margin-top: 1rem;
+}
+
+.login-btn {
+    display: block;
+    margin: 1.2rem 0 0.2rem 0;
+    text-decoration: none;
+    background: linear-gradient(to right, #4A00E0, #dd2476);
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 6px 16px;
+    outline: 0;
+    text-align: center;
+    width: 100%;
+    border: 0;
+}
+
+.facebook,
+.twitter {
+    text-decoration: none;
+    display: block;
+    width: 90%;
+    border: 2px solid #333;
+    padding: 4px 8px;
+    border-radius: 2rem;
+    color: #ddd;
+    display: flex;
+    align-items: center;
+}
+
+.twitter {
+    margin-top: 1rem;
+}
+
+.icon {
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0.3rem;
+    border-radius: 50%;
+    background-color: #ddd;
+    font-size: 0.8rem;
+    color: black;
+}
+
+p {
+    text-align: center;
+    margin: 0.6rem 0 1.2rem 0;
+}
+
+p a {
+    color: linear-gradient(to right, #4A00E0, #dd2476);
+    text-decoration: none;
+}
+
+p a:hover {
+    color: #dd2476;
+}
+
+.fab {
+    margin: auto;
+    transform: scale(1.5) translateY(8.8%);
+}
